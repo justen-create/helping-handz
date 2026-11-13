@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helping Handz | Warm Hearts</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4faff;
+    color: #26384a;
+}
+
+header {
+    background: #1769aa;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffbd59;
+}
+
+.hero {
+    min-height: 480px;
+    background:
+    linear-gradient(rgba(10,50,90,.65),
+    rgba(10,50,90,.65)),
+    url("https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=1600")
+    center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffae42;
+    color: #26384a;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ffd080;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+h2 {
+    color: #1769aa;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+.about {
+    background: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 270px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+.card .emoji {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #1769aa;
+    margin-bottom: 12px;
+}
+
+.donate {
+    background: #e4f3ff;
+}
+
+.volunteer {
+    background: white;
+}
+
+.contact {
+    background: #1769aa;
+    color: white;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact a {
+    color: #ffcc76;
+}
+
+footer {
+    background: #104b7c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">💙 Helping Handz</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#help">Who We Help</a>
+        <a href="#donate">Donate</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h1>Warm Hearts, Warm Coats,<br>Brighter Futures.</h1>
+
+        <p>
+        Helping children stay warm, one coat at a time.
+        </p>
+
+        <a href="#donate" class="btn">Donate a Coat ❤️</a>
+    </div>
+</div>
+
+<section class="about" id="about">
+    <h2>About Helping Handz</h2>
+
+    <p>
+    Helping Handz is a charity organization in North Dakota
+    dedicated to collecting winter coats for children.
+    Our mission is to help students stay warm, comfortable,
+    and ready for school during the cold winter season.
+    </p>
+</section>
+
+<section id="help">
+    <h2>Who We Help</h2>
+
+    <p>We support children from Kindergarten to Grade 12.</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">🧒</div>
+            <h3>Young Children</h3>
+            <p>Providing warm coats for children in elementary school.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎒</div>
+            <h3>Students</h3>
+            <p>Helping students stay comfortable while going to school.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">❤️</div>
+            <h3>Our Community</h3>
+            <p>Bringing people together to help children in need.</p>
+        </div>
+    </div>
+</section>
+
+<section class="donate" id="donate">
+    <h2>Donate a Winter Coat</h2>
+
+    <div class="emoji">🧥</div>
+
+    <p>
+    Your gently used or new winter coat can help a child
+    stay warm during the cold season.
+    Every donation makes a difference!
+    </p>
+
+    <br>
+
+    <a href="#contact" class="btn">How to Donate</a>
+</section>
+
+<section class="volunteer" id="volunteer">
+    <h2>Become a Volunteer</h2>
+
+    <div class="emoji">🤝</div>
+
+    <p>
+    Be part of our mission! You can help collect,
+    organize, and distribute winter coats to children.
+    Together, we can spread kindness and warmth.
+    </p>
+
+    <br>
+
+    <a href="#contact" class="btn">Join Our Mission</a>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Helping Handz</h2>
+
+    <p>
+    Want to donate or volunteer?
+    <br>
+    Get in touch with our organization.
+    </p>
+
+    <br>
+
+    <p>📍 North Dakota, USA</p>
+    <p>📧 Email: Add your organization email</p>
+    <p>📱 Phone: Add your contact number</p>
+</section>
+
+<footer>
+    <p>© 2026 Helping Handz Charity Organization</p>
+    <p>Warm Hearts, Warm Coats, Brighter Futures. 💙</p>
+</footer>
+
+</body>
+</html>
